@@ -20,10 +20,13 @@ This project implements a Convolutional Neural Network (CNN) using PyTorch to cl
 - `README.md` → Project details
 
 ## 🔄 Loading the Model
-`To reuse the trained model later:
+
+To reuse the trained model later:
+
+```python
 import torch
 from model import MyModelClass   # or redefine your CNN in the notebook
 
 model = MyModelClass()
 model.load_state_dict(torch.load('best_model.pth', map_location='cpu'))
-model.eval()`
+model.eval()
